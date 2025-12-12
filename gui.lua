@@ -243,7 +243,7 @@ if not requestsDisabled then
 	end
 end
 
-local promptUser = math.random(1,6)
+local promptUser = 2
 
 if promptUser == 1 and prompt and type(prompt.create) == "function" then
 	prompt.create(
@@ -1674,6 +1674,14 @@ function RayfieldLibrary:CreateWindow(Settings)
 	Elements.Visible = false
 	LoadingFrame.Visible = true
 
+	if not Settings.DisableRayfieldPrompts then
+		task.spawn(function()
+			while true do
+				task.wait(math.random(180, 600))
+                -- Removido L
+			end
+		end)
+	end
 
 	pcall(function()
 		if not Settings.ConfigurationSaving.FileName then
