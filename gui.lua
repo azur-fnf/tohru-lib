@@ -1675,12 +1675,17 @@ function RayfieldLibrary:CreateWindow(Settings)
 	LoadingFrame.Visible = true
 
 	if not Settings.DisableRayfieldPrompts then
-		task.spawn(function()
-			while true do
-				task.wait(math.random(180, 600))
-                -- Removido L
-			end
-		end)
+--		task.spawn(function()
+--			while true do
+--				task.wait(math.random(180, 600))
+--				RayfieldLibrary:Notify({
+--					Title = "Rayfield Interface",
+--					Content = "Enjoying this UI library? Find it at sirius.menu/discord",
+--					Duration = 7,
+--					Image = 4370033185,
+--				})
+--			end
+--		end)
 	end
 
 	pcall(function()
