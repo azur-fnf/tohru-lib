@@ -506,7 +506,7 @@ local RayfieldLibrary = {
 			InputBackground = Color3.fromRGB(30, 35, 65),
 			InputStroke = Color3.fromRGB(85, 95, 170),
 			PlaceholderColor = Color3.fromRGB(160, 170, 220)
-		}
+		},
 
 
 		Green = {
