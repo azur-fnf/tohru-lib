@@ -1,17 +1,7 @@
---[[
 
-	Rayfield Interface Suite
-	by Sirius
-
-	shlex  | Designing + Programming
-	iRay   | Programming
-	Max    | Programming
-	Damian | Programming
-
-]]
 
 if debugX then
-	warn('Initialising Rayfield')
+--	warn('Initialising Rayfield')
 end
 
 local function getService(name)
@@ -475,6 +465,49 @@ local RayfieldLibrary = {
 			InputStroke = Color3.fromRGB(80, 50, 110),
 			PlaceholderColor = Color3.fromRGB(178, 150, 200)
 		},
+		
+		CrystalNight = {
+			TextColor = Color3.fromRGB(235, 235, 245),
+
+			Background = Color3.fromRGB(18, 20, 35),
+			Topbar = Color3.fromRGB(25, 28, 50),
+			Shadow = Color3.fromRGB(10, 12, 25),
+
+			NotificationBackground = Color3.fromRGB(28, 30, 55),
+			NotificationActionsBackground = Color3.fromRGB(235, 235, 245),
+
+			TabBackground = Color3.fromRGB(35, 40, 75),
+			TabStroke = Color3.fromRGB(55, 60, 110),
+			TabBackgroundSelected = Color3.fromRGB(120, 140, 220),
+			TabTextColor = Color3.fromRGB(210, 215, 235),
+			SelectedTabTextColor = Color3.fromRGB(25, 30, 60),
+
+			ElementBackground = Color3.fromRGB(30, 35, 65),
+			ElementBackgroundHover = Color3.fromRGB(38, 45, 85),
+			SecondaryElementBackground = Color3.fromRGB(26, 30, 55),
+			ElementStroke = Color3.fromRGB(65, 70, 130),
+			SecondaryElementStroke = Color3.fromRGB(55, 60, 115),
+
+			SliderBackground = Color3.fromRGB(70, 80, 160),
+			SliderProgress = Color3.fromRGB(100, 120, 220),
+			SliderStroke = Color3.fromRGB(130, 150, 255),
+
+			ToggleBackground = Color3.fromRGB(30, 35, 60),
+			ToggleEnabled = Color3.fromRGB(90, 110, 210),
+			ToggleDisabled = Color3.fromRGB(70, 75, 120),
+			ToggleEnabledStroke = Color3.fromRGB(120, 140, 255),
+			ToggleDisabledStroke = Color3.fromRGB(95, 100, 150),
+			ToggleEnabledOuterStroke = Color3.fromRGB(60, 70, 140),
+			ToggleDisabledOuterStroke = Color3.fromRGB(55, 60, 100),
+
+			DropdownSelected = Color3.fromRGB(40, 45, 85),
+			DropdownUnselected = Color3.fromRGB(28, 32, 60),
+
+			InputBackground = Color3.fromRGB(30, 35, 65),
+			InputStroke = Color3.fromRGB(85, 95, 170),
+			PlaceholderColor = Color3.fromRGB(160, 170, 220)
+		}
+
 
 		Green = {
 			TextColor = Color3.fromRGB(30, 60, 30),
@@ -1629,7 +1662,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 	LoadingFrame.Subtitle.Text = Settings.LoadingSubtitle or "Interface Suite"
 
 	if Settings.LoadingTitle ~= "Rayfield Interface Suite" then
-		LoadingFrame.Version.Text = "Rayfield UI"
+		LoadingFrame.Version.Text = "Maid Dragon :D"
 	end
 
 	if Settings.Icon and Settings.Icon ~= 0 and Topbar:FindFirstChild('Icon') then
