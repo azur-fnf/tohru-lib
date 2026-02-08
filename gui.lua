@@ -1674,19 +1674,19 @@ function RayfieldLibrary:CreateWindow(Settings)
 	Elements.Visible = false
 	LoadingFrame.Visible = true
 
-	if not Settings.DisableRayfieldPrompts then
-		task.spawn(function()
-			while true do
-				task.wait(math.random(180, 240))
-				RayfieldLibrary:Notify({
-					Title = "nodeexec.lol",
-					Content = "wtf why i am maid dragon lover?",
-					Duration = 7,
-					Image = 4370033185,
-				})
-			end
-		end)
-	end
+--	if not Settings.DisableRayfieldPrompts then
+--		task.spawn(function()
+--			while true do
+--				task.wait(math.random(180, 240))
+--				RayfieldLibrary:Notify({
+--					Title = "nodeexec.lol",
+--					Content = "wtf why i am maid dragon lover?",
+--					Duration = 7,
+--					Image = 4370033185,
+--				})
+--			end
+--		end)
+--	end
 
 	pcall(function()
 		if not Settings.ConfigurationSaving.FileName then
